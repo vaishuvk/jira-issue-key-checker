@@ -5,11 +5,11 @@ branding:
   color: "purple"
 on: [pull_request]
 inputs:
-  GITHUB_TOKEN:
+  TOKEN_GITHUB:
     required: true
-  # jira-prefix:
-  #   required: true
-  #   description: "Jira issue key prefix. Ex. ABC-1111, prefix would be ABC"
+  jira-prefix:
+    required: true
+    description: "Jira issue key prefix. Ex. ABC-1111, prefix would be ABC"
 runs:
   using: "node12"
   main: "index.js"
